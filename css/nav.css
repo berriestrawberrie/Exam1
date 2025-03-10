@@ -63,8 +63,6 @@
 /*PHONE:: 320PX */
 @media screen and (max-width: 320px) {
   nav {
-    margin: 0;
-    width: 90%;
     height: 83px;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -4,7 +4,8 @@
 
 *{
     color: colors.$light;
-  
+
+
     
 }
 body{
@@ -54,7 +55,6 @@ h2{
     font-family: fonts.$aleo;
     font-size: 36px;
     line-height: 26px;
-    text-transform: uppercase;
     font-weight: 400;
 }
 h4{
@@ -161,3 +161,4 @@ h4{
 /*CSS BY SECTION*/
 @import 'splash';
 @import 'chooseus';
+@import 'icons';

@@ -2,8 +2,8 @@
 @use 'colors';
 
 
-/*DESKTOP:: LARGE 768PX+ */
-@media screen and (min-width: 769px) {
+/*DESKTOP:: LARGE 751PX+*/
+@media screen and (min-width: 751px) {
     .choose{
 
         background-image: url(../images/chooseus.png);
@@ -23,9 +23,9 @@
             }
         }
         &__images{
-            width: 40%;
-            margin: 0 auto;
+
             display: flex;
+            width: 50%;
             flex-direction: column;
             align-items: flex-start;
             .btmimg{
@@ -33,65 +33,42 @@
             }
         }
     }
-}/*END OF DESKTOP:: LARGE 768PX+ */
+}/*END OF DESKTOP:: LARGE 751PX+ */
 
 /*TABLET:: 768PX */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
 
     .choose{
         padding: 20px;
         background-image: url(../images/chooseus.png);
         background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         &__content{
-            margin: 0 auto;
-            max-width: 560px;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             button{
+            
                 width: 228px;
                 background-image: url(../images/duo.png);
                 background-size: cover;
+                margin-bottom: 20px;
             }
         }
         &__images{
-            margin: 0 auto;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-
+            align-items: center;
+            img{
+                max-width: 400px;
+                width: 100%;
+            }
+            
         }
     }
 
-}/*END OF TABLET:: MD 768PX */
+}/*END OF TABLET:: MD 750PX */
 
 /*PHONE:: 320PX */
-@media screen and (max-width: 320px) {
-    .choose{
-        padding: 20px;
-        background-image: url(../images/chooseus.png);
-        background-size: cover;
-        &__content{
-            margin: 0 auto;
-            max-width: 560px;
-            width: 100%;
-            button{
-                width: 228px;
-                background-image: url(../images/duo.png);
-                background-size: cover;
-            }
-        }
-        &__images{
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-        }
-    }
-    
-}
 
 
 /*END OF TABLET:: SM 320PX */
