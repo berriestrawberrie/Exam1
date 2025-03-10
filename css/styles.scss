@@ -1,2 +1,122 @@
 @use 'fonts';
 @use 'colors';
+
+
+
+*{
+    color: colors.$light;
+}
+body{
+    background-color: colors.$main;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: overline;
+
+}
+h1{
+    font-family: fonts.$josefin;
+    text-align: center;
+    font-size: 48px;
+    line-height: 26px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+}
+h3{
+    font-family: fonts.$josefin;
+    text-align: center;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+
+}
+h4{
+    font-family: fonts.$josefin;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.btn{
+    background-color: colors.$main;
+    height: 60px;
+    padding: 20px;
+    width: 153px;
+    font-family: fonts.$aleo;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+
+.spacerlrg{
+    height: 200px;
+}
+.spacermd{
+    height: 108px;
+}
+
+/*SPLASH SECTION*/
+
+.splash{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/splash.png);
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &__title{
+        margin: 0 auto;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+        max-width: 650px;
+        width: 100%;
+        height: 60px;
+        border: 3px solid colors.$light;
+        background-color: colors.$light;
+        input{
+            width: 500px;
+            border: none;
+            text-align: center;
+            font-size: 14px;
+            font-family: fonts.$josefin;
+            line-height: 26px;
+            letter-spacing: 2.8px;
+            font-weight: 400;
+        }
+    }
+
+    &__scroll{
+        text-align: center;
+        font-size: 14px;
+        font-family: fonts.$josefin;
+        line-height: 26px;
+        letter-spacing: 2.8px;
+        font-weight: 400;
+
+    }
+}
