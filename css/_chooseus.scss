@@ -1,0 +1,97 @@
+@use 'fonts';
+@use 'colors';
+
+
+/*DESKTOP:: LARGE 768PX+ */
+@media screen and (min-width: 769px) {
+    .choose{
+
+        background-image: url(../images/chooseus.png);
+        background-size: cover;
+        height: 685px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__content{
+            margin: 0 auto;
+            max-width: 560px;
+            width: 100%;
+            button{
+                width: 228px;
+                background-image: url(../images/duo.png);
+                background-size: cover;
+            }
+        }
+        &__images{
+            width: 40%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .btmimg{
+                align-self: flex-end;
+            }
+        }
+    }
+}/*END OF DESKTOP:: LARGE 768PX+ */
+
+/*TABLET:: 768PX */
+@media screen and (max-width: 768px) {
+
+    .choose{
+        padding: 20px;
+        background-image: url(../images/chooseus.png);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__content{
+            margin: 0 auto;
+            max-width: 560px;
+            width: 100%;
+            button{
+                width: 228px;
+                background-image: url(../images/duo.png);
+                background-size: cover;
+            }
+        }
+        &__images{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+    }
+
+}/*END OF TABLET:: MD 768PX */
+
+/*PHONE:: 320PX */
+@media screen and (max-width: 320px) {
+    .choose{
+        padding: 20px;
+        background-image: url(../images/chooseus.png);
+        background-size: cover;
+        &__content{
+            margin: 0 auto;
+            max-width: 560px;
+            width: 100%;
+            button{
+                width: 228px;
+                background-image: url(../images/duo.png);
+                background-size: cover;
+            }
+        }
+        &__images{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+    }
+    
+}
+
+
+/*END OF TABLET:: SM 320PX */

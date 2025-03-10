@@ -1,0 +1,162 @@
+main{
+    width: 100%;
+}
+/*DESKTOP:: LARGE 751PX+ */
+@media screen and (min-width: 751px) {
+    .spacerlrg{
+        height: 200px;
+    }
+    .spacermd{
+        height: 108px;
+    }
+    .splash{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../images/splash.png);
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: auto;
+        &__title{
+            margin: 0 auto;
+            max-width: 700px;
+            width: 100%;
+            border: 2px solid white;
+
+        }
+        &__form{
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            max-width: 650px;
+            width: 100%;
+            height: 60px;
+            border: 3px solid colors.$light;
+            background-color: colors.$light;
+            input{
+                width: 500px;
+                border: none;
+                text-align: center;
+                font-size: 14px;
+                font-family: fonts.$josefin;
+                line-height: 26px;
+                letter-spacing: 2.8px;
+                font-weight: 400;
+            }
+        }
+
+        &__scroll{
+            text-align: center;
+            font-size: 14px;
+            font-family: fonts.$josefin;
+            line-height: 26px;
+            letter-spacing: 2.8px;
+            font-weight: 400;
+
+        }
+    }
+}/*END OF DESKTOP:: LARGE 751PX+ */
+
+/*TABLET:: 750PX */
+@media screen and (max-width: 750px) {
+    .spacerlrg{
+        height: 200px;
+    }
+    .spacermd{
+        height: 108px;
+    }
+    .splash{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../images/splash.png);
+        background-size: cover;
+        &__title{
+            margin: 0 auto;
+            border: 2px solid yellow;
+
+        }
+        &__form{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            border: 3px solid colors.$light;
+            background-color: colors.$light;
+            input{
+                border: none;
+                text-align: center;
+                font-size: 14px;
+                font-family: fonts.$josefin;
+                line-height: 26px;
+                letter-spacing: 2.8px;
+                font-weight: 400;
+            }
+        }
+
+        &__scroll{
+            text-align: center;
+            font-size: 14px;
+            font-family: fonts.$josefin;
+            line-height: 26px;
+            letter-spacing: 2.8px;
+            font-weight: 400;
+
+        }
+    }
+
+}/*END OF TABLET:: MD 750PX */
+
+/*PHONE:: 320PX */
+@media screen and (max-width: 320px) {
+    .spacerlrg{
+        height: none;
+    }
+    .spacermd{
+        display: none;
+    }
+    .splash{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../images/splash.png);
+        background-size: cover;
+
+        &__title{
+            margin: 0 auto;
+            width: 90%;
+            border: 2px solid red;
+        
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            border: 3px solid colors.$light;
+            background-color: colors.$light;
+            input{
+
+                border: none;
+                text-align: center;
+                font-size: 12px;
+                font-family: fonts.$josefin;
+                line-height: 26px;
+                letter-spacing: 2.8px;
+                font-weight: 400;
+            }
+            button{
+                width: 100%;
+            }
+    }
+
+    &__scroll{
+        text-align: center;
+        font-size: 14px;
+        font-family: fonts.$josefin;
+        line-height: 26px;
+        letter-spacing: 2.8px;
+        font-weight: 400;
+
+    }
+      
+    }
+
+}/*END OF TABLET:: SM 320PX */

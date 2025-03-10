@@ -2,15 +2,22 @@
 @use 'colors';
 
 
-
 *{
     color: colors.$light;
+  
+    
 }
 body{
     background-color: colors.$main;
+
+
 }
 p{
-    margin: 0;
+    font-family: fonts.$josefin;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    line-height: 26px;
+    font-weight: 400;
 }
 a{
     text-decoration: none;
@@ -20,14 +27,16 @@ a:hover{
     text-decoration: overline;
 
 }
+
+
+/*DESKTOP:: LARGE 751PX+ */
+@media screen and (min-width: 751px){
 h1{
     font-family: fonts.$josefin;
     text-align: center;
     font-size: 48px;
     line-height: 26px;
     letter-spacing: 4.8px;
-    text-transform: uppercase;
-    margin: 0;
     font-weight: 700;
 }
 h3{
@@ -41,6 +50,13 @@ h3{
     font-weight: 700;
 
 }
+h2{
+    font-family: fonts.$aleo;
+    font-size: 36px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 h4{
     font-family: fonts.$josefin;
     text-align: center;
@@ -51,12 +67,88 @@ h4{
     margin-top: 10px;
     margin-bottom: 40px;
 }
+    
+}/*END OF DESKTOP:: LARGE 751PX+ */
+
+/*TABLET:: MED 750PX */
+@media screen and (max-width: 750px){
+    h1{
+        font-family: fonts.$josefin;
+        text-align: center;
+        font-size: 40px;
+        line-height: 26px;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 700;
+    }
+    h3{
+        font-family: fonts.$josefin;
+        text-align: center;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 700;
+    
+    }
+    h4{
+        font-family: fonts.$josefin;
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 6.82px;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
+    
+}/*END OF TABLET:: MED 750PX */
+
+/*PHONE:: SM 320PX */
+@media screen and (max-width: 320px){
+
+    h1{
+        font-family: fonts.$josefin;
+        text-align: center;
+        font-size: 30px;
+        line-height: 26px;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 700;
+    }
+    h3{
+        font-family: fonts.$josefin;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 700;
+    
+    }
+    h4{
+        font-family: fonts.$josefin;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 6.82px;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
+}/*END OF PHONE:: SM 320PX */
+
 
 .btn{
     background-color: colors.$main;
     height: 60px;
     padding: 20px;
-    width: 153px;
     font-family: fonts.$aleo;
     font-size: 14px;
     letter-spacing: 1.4px;
@@ -66,57 +158,6 @@ h4{
     border: none;
 }
 
-.spacerlrg{
-    height: 200px;
-}
-.spacermd{
-    height: 108px;
-}
-
-/*SPLASH SECTION*/
-
-.splash{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/splash.png);
-    background-size: cover;
-    overflow-x: hidden;
-    overflow-y: auto;
-    &__title{
-        margin: 0 auto;
-        max-width: 700px;
-        width: 100%;
-        margin: 0 auto;
-
-    }
-    &__form{
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid red;
-        max-width: 650px;
-        width: 100%;
-        height: 60px;
-        border: 3px solid colors.$light;
-        background-color: colors.$light;
-        input{
-            width: 500px;
-            border: none;
-            text-align: center;
-            font-size: 14px;
-            font-family: fonts.$josefin;
-            line-height: 26px;
-            letter-spacing: 2.8px;
-            font-weight: 400;
-        }
-    }
-
-    &__scroll{
-        text-align: center;
-        font-size: 14px;
-        font-family: fonts.$josefin;
-        line-height: 26px;
-        letter-spacing: 2.8px;
-        font-weight: 400;
-
-    }
-}
+/*CSS BY SECTION*/
+@import 'splash';
+@import 'chooseus';
