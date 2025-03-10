@@ -21,6 +21,11 @@
                 background-image: url(../images/duo.png);
                 background-size: cover;
             }
+            button:hover{
+                background-color: colors.$light;
+                background-image: none;
+                color: colors.$main;
+            }
         }
         &__images{
 
@@ -47,12 +52,17 @@
             flex-direction: column;
             align-items: center;
             button{
-            
                 width: 228px;
                 background-image: url(../images/duo.png);
                 background-size: cover;
                 margin-bottom: 20px;
             }
+            button:hover{
+                background-color: colors.$light;
+                background-image: none;
+                color: colors.$main;
+            }
+            
         }
         &__images{
             display: flex;

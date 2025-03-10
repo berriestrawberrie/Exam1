@@ -325,6 +325,11 @@ main {
     background-image: url(../images/duo.png);
     background-size: cover;
   }
+  .choose__content button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
+  }
   .choose__images {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,6 +372,11 @@ main {
     background-image: url(../images/duo.png);
     background-size: cover;
     margin-bottom: 20px;
+  }
+  .choose__content button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
   }
   .choose__images {
     display: -webkit-box;
@@ -548,3 +558,271 @@ main {
     border-radius: 20px;
   }
 } /*END OF PHONE:: 320PX */
+/*DESKTOP:: LARGE 751PX+ */
+@media screen and (min-width: 751px) {
+  .bookit {
+    background-image: url(../images/bookit.png);
+  }
+  .bookit__wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 700px;
+    width: 80%;
+  }
+  .content {
+    max-width: 543px;
+    width: 100%;
+    height: 374px;
+    background-color: rgba(35, 35, 35, 0.5843137255);
+    padding: 40px;
+    font-weight: 400;
+  }
+  .content h3 {
+    text-align: left;
+  }
+  .content .small {
+    text-transform: capitalize;
+  }
+  .content button {
+    width: 228px;
+    background-image: url(../images/duo.png);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  .content button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
+  }
+} /*END OF DESKTOP:: LARGE 751PX+ */
+/*TABLET:: MED 750PX+ */
+@media screen and (max-width: 750px) {
+  .bookit {
+    background-image: url(../images/bookit.png);
+  }
+  .bookit__wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 700px;
+    width: 80%;
+  }
+  .content {
+    max-width: 543px;
+    width: 100%;
+    height: 374px;
+    background-color: rgba(35, 35, 35, 0.5843137255);
+    padding: 40px;
+    font-weight: 400;
+  }
+  .content h3 {
+    text-align: left;
+  }
+  .content .small {
+    text-transform: capitalize;
+  }
+  .content button {
+    width: 228px;
+    background-image: url(../images/duo.png);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  .content button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
+  }
+} /*END OF TABLET:: MED 750PX */
+/*PHONE:: 320PX */
+@media screen and (max-width: 320px) {
+  .bookit {
+    background-image: url(../images/bookit.png);
+  }
+  .bookit__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 600px;
+    width: 100%;
+  }
+  .content {
+    height: 374px;
+    background-color: rgba(35, 35, 35, 0.5843137255);
+    font-weight: 400;
+  }
+  .content h3 {
+    text-align: left;
+  }
+  .content .small {
+    text-transform: capitalize;
+  }
+  .content button {
+    width: 100%;
+    background-image: url(../images/duo.png);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  .content button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
+  }
+} /*END OF PHONE:: 320PX */
+/*DESKTOP:: LARGE 751PX+ */
+@media screen and (min-width: 751px) {
+  .bookit2 {
+    background-image: url(../images/bookit2.png);
+  }
+  .bookit2__wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 700px;
+    width: 80%;
+  }
+  .content2 {
+    max-width: 543px;
+    width: 100%;
+    height: 374px;
+    background-color: rgba(35, 35, 35, 0.5843137255);
+    padding: 40px;
+    font-weight: 400;
+  }
+  .content2 h3 {
+    text-align: left;
+  }
+  .content2 .small2 {
+    text-transform: capitalize;
+  }
+  .content2 button {
+    width: 228px;
+    background-image: url(../images/duo.png);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  .content2 button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
+  }
+} /*END OF DESKTOP:: LARGE 751PX+ */
+/*TABLET:: MED 750PX+ */
+@media screen and (max-width: 750px) {
+  .bookit {
+    background-image: url(../images/bookit.png);
+  }
+  .bookit__wrapper {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 700px;
+    width: 80%;
+  }
+  .content {
+    max-width: 543px;
+    width: 100%;
+    height: 374px;
+    background-color: rgba(35, 35, 35, 0.5843137255);
+    padding: 40px;
+    font-weight: 400;
+  }
+  .content h3 {
+    text-align: left;
+  }
+  .content .small {
+    text-transform: capitalize;
+  }
+  .content button {
+    width: 228px;
+    background-image: url(../images/duo.png);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  .content button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
+  }
+} /*END OF TABLET:: MED 750PX */
+/*PHONE:: 320PX */
+@media screen and (max-width: 320px) {
+  .bookit {
+    background-image: url(../images/bookit.png);
+  }
+  .bookit__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 600px;
+    width: 100%;
+  }
+  .content {
+    height: 374px;
+    background-color: rgba(35, 35, 35, 0.5843137255);
+    font-weight: 400;
+  }
+  .content h3 {
+    text-align: left;
+  }
+  .content .small {
+    text-transform: capitalize;
+  }
+  .content button {
+    width: 100%;
+    background-image: url(../images/duo.png);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  .content button:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #5474FD;
+  }
+} /*END OF PHONE:: 320PX */
+/*DESKTOP:: LARGE 751PX+ */
+/*END OF DESKTOP:: LARGE 751PX+ */
+/*TABLET:: MED 750PX+ */
+/*END OF TABLET:: MED 750PX */
+/*PHONE:: 320PX */
+/*END OF PHONE:: 320PX */

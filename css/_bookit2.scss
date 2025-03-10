@@ -1,0 +1,130 @@
+
+
+/*DESKTOP:: LARGE 751PX+ */
+@media screen and (min-width: 751px) {
+    
+    .bookit2{
+        background-image: url(../images/bookit2.png);
+        &__wrapper{
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 700px;
+            width: 80%;
+ 
+        }
+    }
+
+    .content2{
+        max-width: 543px;
+        width: 100%;
+        height: 374px;
+        background-color: #23232395;
+        padding: 40px;
+        font-weight: 400;
+        h3{
+            text-align: left;
+        }
+        .small2{
+            text-transform: capitalize;
+        }
+        button{
+            width: 228px;
+            background-image: url(../images/duo.png);
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        button:hover{
+            background-color: colors.$light;
+            background-image: none;
+            color: colors.$main;
+        }
+    }
+    
+}/*END OF DESKTOP:: LARGE 751PX+ */
+
+
+/*TABLET:: MED 750PX+ */
+@media screen and (max-width: 750px) {
+    .bookit{
+        background-image: url(../images/bookit.png);
+        &__wrapper{
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 700px;
+            width: 80%;
+ 
+        }
+    }
+
+    .content{
+        max-width: 543px;
+        width: 100%;
+        height: 374px;
+        background-color: #23232395;
+        padding: 40px;
+        font-weight: 400;
+        h3{
+            text-align: left;
+        }
+        .small{
+            text-transform: capitalize;
+        }
+        button{
+            width: 228px;
+            background-image: url(../images/duo.png);
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        button:hover{
+            background-color: colors.$light;
+            background-image: none;
+            color: colors.$main;
+        }
+    }
+    
+}/*END OF TABLET:: MED 750PX */
+
+/*PHONE:: 320PX */
+@media screen and (max-width: 320px) {
+    .bookit{
+        background-image: url(../images/bookit.png);
+        &__wrapper{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 600px;
+            width: 100%;
+
+ 
+        }
+    }
+
+    .content{
+        height: 374px;
+        background-color: #23232395;
+        
+        font-weight: 400;
+        h3{
+            text-align: left;
+        }
+        .small{
+            text-transform: capitalize;
+        }
+        button{
+           width: 100%;
+            background-image: url(../images/duo.png);
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        button:hover{
+            background-color: colors.$light;
+            background-image: none;
+            color: colors.$main;
+        }
+    }
+    
+}/*END OF PHONE:: 320PX */
