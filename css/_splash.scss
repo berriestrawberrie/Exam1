@@ -1,6 +1,8 @@
 main{
     width: 100%;
 }
+
+
 /*DESKTOP:: LARGE 751PX+ */
 @media screen and (min-width: 751px) {
     .spacerlrg{
@@ -20,7 +22,6 @@ main{
             margin: 0 auto;
             max-width: 700px;
             width: 100%;
-            border: 2px solid white;
 
         }
         &__form{
@@ -33,6 +34,7 @@ main{
             border: 3px solid colors.$light;
             background-color: colors.$light;
             input{
+                color: colors.$dark;
                 width: 500px;
                 border: none;
                 text-align: center;
@@ -71,7 +73,6 @@ main{
         background-size: cover;
         &__title{
             margin: 0 auto;
-            border: 2px solid yellow;
 
         }
         &__form{
@@ -82,6 +83,7 @@ main{
             border: 3px solid colors.$light;
             background-color: colors.$light;
             input{
+                color: colors.$dark;
                 border: none;
                 text-align: center;
                 font-size: 14px;
@@ -122,7 +124,6 @@ main{
         &__title{
             margin: 0 auto;
             width: 90%;
-            border: 2px solid red;
         
         }
         &__form{
@@ -133,7 +134,7 @@ main{
             border: 3px solid colors.$light;
             background-color: colors.$light;
             input{
-
+                color: colors.$dark;
                 border: none;
                 text-align: center;
                 font-size: 12px;
@@ -160,3 +161,20 @@ main{
     }
 
 }/*END OF TABLET:: SM 320PX */
+
+.floating{
+    animation: float 2s ease-in-out infinite;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

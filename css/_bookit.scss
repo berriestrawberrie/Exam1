@@ -5,6 +5,7 @@
     
     .bookit{
         background-image: url(../images/bookit.png);
+        background-size: cover;
         &__wrapper{
             margin: 0 auto;
             display: flex;

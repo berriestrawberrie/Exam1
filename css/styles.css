@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   color: #fff;
 }
@@ -138,6 +142,11 @@ a:hover {
   border: none;
 }
 
+.btn:hover {
+  background-color: #fff;
+  color: #5474FD;
+}
+
 /*CSS BY SECTION*/
 main {
   width: 100%;
@@ -162,7 +171,6 @@ main {
     margin: 0 auto;
     max-width: 700px;
     width: 100%;
-    border: 2px solid white;
   }
   .splash__form {
     margin: 0 auto;
@@ -179,6 +187,7 @@ main {
     background-color: #fff;
   }
   .splash__form input {
+    color: #333333;
     width: 500px;
     border: none;
     text-align: center;
@@ -213,7 +222,6 @@ main {
   }
   .splash__title {
     margin: 0 auto;
-    border: 2px solid yellow;
   }
   .splash__form {
     width: 80%;
@@ -229,6 +237,7 @@ main {
     background-color: #fff;
   }
   .splash__form input {
+    color: #333333;
     border: none;
     text-align: center;
     font-size: 14px;
@@ -263,7 +272,6 @@ main {
   .splash__title {
     margin: 0 auto;
     width: 90%;
-    border: 2px solid red;
   }
   .splash__form {
     display: -webkit-box;
@@ -279,6 +287,7 @@ main {
     background-color: #fff;
   }
   .splash__form input {
+    color: #333333;
     border: none;
     text-align: center;
     font-size: 12px;
@@ -299,6 +308,40 @@ main {
     font-weight: 400;
   }
 } /*END OF TABLET:: SM 320PX */
+.floating {
+  -webkit-animation: float 2s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
 /*DESKTOP:: LARGE 751PX+*/
 @media screen and (min-width: 751px) {
   .choose {
@@ -562,6 +605,7 @@ main {
 @media screen and (min-width: 751px) {
   .bookit {
     background-image: url(../images/bookit.png);
+    background-size: cover;
   }
   .bookit__wrapper {
     margin: 0 auto;
@@ -693,6 +737,7 @@ main {
 @media screen and (min-width: 751px) {
   .bookit2 {
     background-image: url(../images/bookit2.png);
+    background-size: cover;
   }
   .bookit2__wrapper {
     margin: 0 auto;
@@ -736,10 +781,10 @@ main {
 } /*END OF DESKTOP:: LARGE 751PX+ */
 /*TABLET:: MED 750PX+ */
 @media screen and (max-width: 750px) {
-  .bookit {
-    background-image: url(../images/bookit.png);
+  .bookit2 {
+    background-image: url(../images/bookit2.png);
   }
-  .bookit__wrapper {
+  .bookit2__wrapper {
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -753,7 +798,7 @@ main {
     height: 700px;
     width: 80%;
   }
-  .content {
+  .content2 {
     max-width: 543px;
     width: 100%;
     height: 374px;
@@ -761,19 +806,19 @@ main {
     padding: 40px;
     font-weight: 400;
   }
-  .content h3 {
+  .content2 h3 {
     text-align: left;
   }
-  .content .small {
+  .content2 .small2 {
     text-transform: capitalize;
   }
-  .content button {
+  .content2 button {
     width: 228px;
     background-image: url(../images/duo.png);
     background-size: cover;
     margin-bottom: 20px;
   }
-  .content button:hover {
+  .content2 button:hover {
     background-color: #fff;
     background-image: none;
     color: #5474FD;
@@ -781,10 +826,10 @@ main {
 } /*END OF TABLET:: MED 750PX */
 /*PHONE:: 320PX */
 @media screen and (max-width: 320px) {
-  .bookit {
-    background-image: url(../images/bookit.png);
+  .bookit2 {
+    background-image: url(../images/bookit2.png);
   }
-  .bookit__wrapper {
+  .bookit2__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -797,32 +842,163 @@ main {
     height: 600px;
     width: 100%;
   }
-  .content {
+  .content2 {
     height: 374px;
     background-color: rgba(35, 35, 35, 0.5843137255);
     font-weight: 400;
   }
-  .content h3 {
+  .content2 h3 {
     text-align: left;
   }
-  .content .small {
+  .content2 .small2 {
     text-transform: capitalize;
   }
-  .content button {
+  .content2 button {
     width: 100%;
     background-image: url(../images/duo.png);
     background-size: cover;
     margin-bottom: 20px;
   }
-  .content button:hover {
+  .content2 button:hover {
     background-color: #fff;
     background-image: none;
     color: #5474FD;
   }
 } /*END OF PHONE:: 320PX */
-/*DESKTOP:: LARGE 751PX+ */
-/*END OF DESKTOP:: LARGE 751PX+ */
-/*TABLET:: MED 750PX+ */
-/*END OF TABLET:: MED 750PX */
+/*DESKTOP:: LARGE 1201PX+ */
+@media screen and (min-width: 1201px) {
+  .review {
+    background-image: url(../images/review.png);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 731px;
+  }
+  .review__sam {
+    width: 60%;
+    height: 284px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .review__sam h3 {
+    text-align: left;
+  }
+  .review__sam .revcontent {
+    width: 70%;
+    min-width: 400px;
+    background-color: #333333;
+    padding: 25px;
+  }
+  .quote {
+    font-size: 36px;
+    margin-right: 5px;
+  }
+} /*END OF DESKTOP:: LARGE 1201PX+ */
+/*TABLET::  1200PX+ */
+@media screen and (max-width: 1200px) {
+  .review {
+    background-image: url(../images/review.png);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100%;
+  }
+  .review__sam {
+    max-width: 650px;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .review__sam h3 {
+    text-align: left;
+  }
+  .review__sam .revcontent {
+    background-color: #333333;
+    padding: 25px;
+  }
+  .quote {
+    font-size: 36px;
+    margin-right: 5px;
+  }
+} /*END OF TABLET:: MED 1200PX */
 /*PHONE:: 320PX */
-/*END OF PHONE:: 320PX */
+@media screen and (max-width: 320px) {
+  .review {
+    background-image: url(../images/review.png);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 100%;
+  }
+  .review__sam {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .review__sam h3 {
+    text-align: left;
+  }
+  .review__sam .revcontent {
+    background-color: #333333;
+    padding: 25px;
+  }
+  .quote {
+    font-size: 36px;
+    margin-right: 5px;
+  }
+} /*END OF PHONE:: 320PX */

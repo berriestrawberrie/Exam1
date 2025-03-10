@@ -5,6 +5,7 @@
     
     .bookit2{
         background-image: url(../images/bookit2.png);
+        background-size: cover;
         &__wrapper{
             margin: 0 auto;
             display: flex;
@@ -47,8 +48,8 @@
 
 /*TABLET:: MED 750PX+ */
 @media screen and (max-width: 750px) {
-    .bookit{
-        background-image: url(../images/bookit.png);
+    .bookit2{
+        background-image: url(../images/bookit2.png);
         &__wrapper{
             margin: 0 auto;
             display: flex;
@@ -60,7 +61,7 @@
         }
     }
 
-    .content{
+    .content2{
         max-width: 543px;
         width: 100%;
         height: 374px;
@@ -70,7 +71,7 @@
         h3{
             text-align: left;
         }
-        .small{
+        .small2{
             text-transform: capitalize;
         }
         button{
@@ -90,8 +91,8 @@
 
 /*PHONE:: 320PX */
 @media screen and (max-width: 320px) {
-    .bookit{
-        background-image: url(../images/bookit.png);
+    .bookit2{
+        background-image: url(../images/bookit2.png);
         &__wrapper{
             display: flex;
             justify-content: flex-start;
@@ -103,7 +104,7 @@
         }
     }
 
-    .content{
+    .content2{
         height: 374px;
         background-color: #23232395;
         
@@ -111,7 +112,7 @@
         h3{
             text-align: left;
         }
-        .small{
+        .small2{
             text-transform: capitalize;
         }
         button{

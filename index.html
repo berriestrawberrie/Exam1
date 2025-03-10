@@ -23,8 +23,19 @@
     <title>Bhromaon</title>
 </head>
 <body>
+    <div id="myNav" class="overlay">
+        <span onclick="closeNav()"><i class="fa-solid fa-x"></i>
+        </span>
+        <ul>
+            <li><a href="#scroll-down">Who we are</a></li>
+            <li><a href="#">What we do</a></li>
+            <li><a href="#">Travel with us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
 
     <header>
+
         <section class="splash">
            <div class="splash__title">
                 <div class="spacerlrg"></div>
@@ -38,7 +49,7 @@
            <div class="splash__scroll">
                 <div class="spacermd"></div>
                 <p>Scroll Down</p>
-                <span><i class="fa-solid fa-chevron-down"></i></span>
+                <a href="#scroll-down"><i class="fa-solid fa-chevron-down floating"></i></a>
            </div>
         </section>
 
@@ -60,7 +71,7 @@
     <main>
         <section class="choose">
             <div class="choose__content">
-                <h2>Why Choose Us</h2>
+                <h2 id="scroll-down">Why Choose Us</h2>
                 <p>Tion and dislike men who are so beguiled and demoralized by 
                     desire by the charms of pleasure of the moment, so blinded 
                     by desire, that they cannot foresee </p>
@@ -115,8 +126,43 @@
             </div>
         </section>
 
+        <section class="review">
+            <h2>What Our Tourist Say</h2>
+            <div class="review__sam">
+                <img src="images/sam.png" alt="Man backpacking on mountain">
+                <div class="revcontent">
+                    <h3>Sam Sumon</h3>
+                    <p><i class="fa-solid fa-quote-left fa-xs quote" style="color: #5474fd;"></i>But I must explain to you how all this mistaken idea of account to
+                         denouncinpleasure and praising pain  But I must explain to you how 
+                         all this mistaken idea of account to nai denouncing pleasure and praising
+                          pain was account  born and I account will give you a complete account of the 
+                          system was account  born and I account will give you a nai the complete account 
+                          of the system</p>
+                </div>
+            </div>
 
+        </section>
     </main>
-    
+
+    <footer>
+        <h3>Bhromaon</h3>
+        <p>Safe Travel Anywhere</p>
+        <ul>
+            <li><a href=#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in blue"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+    </footer>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "flex";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+        }
+        </script>
 </body>
 </html>
