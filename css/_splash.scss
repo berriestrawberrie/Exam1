@@ -5,12 +5,7 @@ main{
 
 /*DESKTOP:: LARGE 751PX+ */
 @media screen and (min-width: 751px) {
-    .spacerlrg{
-        height: 200px;
-    }
-    .spacermd{
-        height: 108px;
-    }
+
     .splash{
  
         height: 100vh;
@@ -19,9 +14,17 @@ main{
         overflow-x: hidden;
         overflow-y: auto;
         &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
             margin: 0 auto;
             max-width: 700px;
             width: 100%;
+            height: 500px;
+            h4{
+                margin-top: -20px;
+            }
 
         }
         &__form{
@@ -47,6 +50,7 @@ main{
         }
 
         &__scroll{
+            height: 200px;
             text-align: center;
             font-size: 14px;
             font-family: fonts.$josefin;
@@ -60,19 +64,19 @@ main{
 
 /*TABLET:: 750PX */
 @media screen and (max-width: 750px) {
-    .spacerlrg{
-        height: 200px;
-    }
-    .spacermd{
-        height: 50px;
-    }
+
     .splash{
         width: 100vw;
         height: 100vh;
         background-image: url(../images/splash.png);
         background-size: cover;
         &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
             margin: 0 auto;
+            height: 500px;
 
         }
         &__form{
@@ -101,6 +105,7 @@ main{
             line-height: 26px;
             letter-spacing: 2.8px;
             font-weight: 400;
+            height: 200px;
 
         }
     }
@@ -109,12 +114,7 @@ main{
 
 /*PHONE:: 320PX */
 @media screen and (max-width: 320px) {
-    .spacerlrg{
-        height: none;
-    }
-    .spacermd{
-        display: none;
-    }
+
     .splash{
         width: 100vw;
         height: 100vh;
